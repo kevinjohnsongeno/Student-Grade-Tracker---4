@@ -1,0 +1,12 @@
+USE gradetracker;
+SELECT student_id, SUM(totalmarks) AS sum_marks, AVG(totalmarks) AS avg_marks 
+	FROM gradetracker.student_marks
+    GROUP BY student_id;
+SELECT student_id, MAX(totalmarks) AS maxmarks, MIN(totalmarks) AS minmarks
+	FROM gradetracker.student_marks
+    GROUP BY student_id;
+SELECT COUNT(*) AS totalstudents FROM gradetracker.students;
+SELECT student_id, SUM(totalmarks) AS sum_marks, AVG(totalmarks) AS avg_marks 
+	FROM gradetracker.student_marks
+    GROUP BY student_id
+    HAVING avg_marks > 90;
