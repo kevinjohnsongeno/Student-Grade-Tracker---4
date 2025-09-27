@@ -52,6 +52,6 @@ This section explains the SQL commands used to perform aggregation, grouping, an
 
 ---
 
-By mastering these commands, you can efficiently analyze and summarize student performance data in the GradeTracker system.
+By mastering these commands, it becomes efficient to analyze and summarize student performance data in the GradeTracker system.
 
 ---
